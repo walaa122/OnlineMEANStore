@@ -1,0 +1,39 @@
+<!-- <hr style="color: red;"> -->
+<h2>Reviews</h2>
+<div class="container">
+  <div *ngFor="let review of reviews" class="review">
+    <div class="review-author">
+      <span>{{ review.name }}</span>
+    </div>
+    <div class="review-rating">
+      <star-rating [stars]="review.rating" [size]="1.2"></star-rating>
+    </div>
+    <div class="review-content">
+      <p>{{ review.content }}</p>
+    </div>
+  </div>
+</div>
+
+<div class="new-review-form">
+  <h3>Add a Review</h3>
+  <form (ngSubmit)="addReview()">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" [(ngModel)]="name" required>
+
+    <label for="rating">Rating:</label>
+    <input type="number" id="rating" name="rating" min="1" max="5" [(ngModel)]="rating" required>
+
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" [(ngModel)]="description" required>
+
+    <label for="content">Content:</label>
+    <textarea id="content" name="content" [(ngModel)]="content" required></textarea>
+
+    <button type="submit" [disabled]="!name || !rating || !description || !content">Submit</button>
+  </form>
+
+  <div *ngIf="showThankYouMessage" class="thank-you-message">
+    Thanks for your review!
+  </div>
+</div>
+

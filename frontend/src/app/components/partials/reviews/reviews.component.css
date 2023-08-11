@@ -1,0 +1,219 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.89);
+}
+
+span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container > * {
+  min-width: 20rem;
+  max-width: 30rem;
+}
+
+.review {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  color: black;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.review .review-author {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review .review-author .name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.review .review-rating .favorite {
+  color: #e72929;
+  font-size: 2.5rem;
+}
+
+.review .review-rating .favorite.not {
+  color: grey;
+}
+
+.review .review-content {
+  margin-top: 1rem;
+}
+
+.review .review-content p {
+  font-size: 1.2rem;
+}
+
+.new-review-form {
+  margin-top: 2rem;
+  width: 50%;
+  margin-left: 370px;
+}
+
+.new-review-form h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.new-review-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-review-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.new-review-form input,
+.new-review-form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.new-review-form button {
+  color: white;
+  background: #e72929;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+}
+
+.new-review-form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.new-review-form .thank-you-message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #e72929;
+  text-align: center;
+}
+
+
+
+/*
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+}
+
+h2 {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.89);
+}
+
+span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container > * {
+  min-width: 20rem;
+  max-width: 30rem;
+}
+
+.review {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1 0;
+  color: black;
+  padding: 1rem;
+  margin-left: 1rem;
+}
+
+.review .review-author {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review .review-author .name {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.review .review-rating .favorite {
+  color: #e72929;
+  font-size: 2.5rem;
+}
+
+.review .review-rating .favorite.not {
+  color: grey;
+}
+
+.review .review-content {
+  margin-top: 1rem;
+}
+
+.review .review-content p {
+  font-size: 1.2rem;
+}
+
+.new-review-form {
+  margin-top: 2rem;
+}
+
+.new-review-form h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.new-review-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.new-review-form label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.new-review-form input,
+.new-review-form textarea {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.new-review-form button {
+  color: white;
+  background: #e72929;
+  border: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 10rem;
+  outline: none;
+}
+
+.new-review-form button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.new-review-form .thank-you-message {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #e72929;
+  text-align: center;
+} */
